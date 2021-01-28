@@ -6,7 +6,7 @@
         <StackLayout>
             <StackLayout>
                 <Label Text="Date de la réservation: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
-                <DatePicker x:Name="DateBooking" Date="{Binding Path=GetDate, Mode=TwoWay}"/>
+                <DatePicker x:Name="DateBooking" Date="{Binding Path=Date, Mode=TwoWay}"/>
                 <Label Text="Heure de début: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
                 <TimePicker x:Name="HeureDebut"  Time="{Binding Path=StartHour, Mode=TwoWay}" Format="HH:mm"/>
                 <Label Text="Heure de fin: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
