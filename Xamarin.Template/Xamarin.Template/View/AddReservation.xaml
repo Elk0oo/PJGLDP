@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Template.View.AddReservation">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Date de la réservation: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+                <DatePicker x:Name="DateBooking" Date="{Binding Path=GetDate, Mode=TwoWay}"/>
+                <Label Text="Heure de début: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+                <TimePicker x:Name="HeureDebut"  Time="{Binding Path=StartHour, Mode=TwoWay}" Format="HH:mm"/>
+                <Label Text="Heure de fin: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+                <TimePicker x:Name="HeureFin"  Time="{Binding Path=EndHour, Mode=TwoWay}" Format="HH:mm"/>
+                <Label Text="Nb attendes" TextColor="Black" FontSize="Medium" />
+                <Editor x:Name="NbAttendes" Text="{Binding Path=NbAttendees, Mode=TwoWay}" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Valider" TextColor="White" BackgroundColor="#800D0F" Clicked="Valider_Clicked"/>
+            </StackLayout>
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

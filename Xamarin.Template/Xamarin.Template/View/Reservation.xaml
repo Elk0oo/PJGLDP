@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Template.View.Reservation">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <ListView  x:Name="listView" HeightRequest="5000">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical"  BackgroundColor="White">
+                                    <StackLayout Orientation="Horizontal" Margin="10" Padding="25">
+                                        <Label FontAttributes="Italic" Text="Date de la réservation :" WidthRequest="100" />
+                                        <Label FontAttributes="Bold" Text="{Binding Date}" WidthRequest="100" />
+                                        <Label FontAttributes="Italic" Text="Heure début:" WidthRequest="100" />
+                                        <Label FontAttributes="Bold" Text="{Binding StartHour}" TextColor="Black" />
+                                        <Label FontAttributes="Italic" Text="Heure de fin:" TextColor="Black" />
+                                        <Label FontAttributes="Bold" Text="{Binding EndHour}" TextColor="Black" />
+                                       
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="AddReserversation" TextColor="White" BackgroundColor="#800D0F" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Xamarin.PJGLPD
+/Xamarin.Template/Xamarin.Template/obj
+/Xamarin.Template/Xamarin.Template.Android/obj
+/Xamarin.Template/Xamarin.Template.iOS/obj
+/Xamarin.Template/Xamarin.Template.UWP/obj
+/Xamarin.Template/Xamarin.Template/bin/Debug/netstandard2.0
+/Xamarin.Template/Xamarin.Template.Android/bin/Debug
+/Xamarin.Template/Xamarin.Template.UWP/bin/x86/Debug
+/Xamarin.Template/Xamarin.Template.iOS/bin/iPhoneSimulator/Debug
+/Xamarin.Entity/bin/Debug/netstandard2.0
+/Xamarin.Entity/obj/Debug/netstandard2.0/.NETStandard,Version=v2.0.AssemblyAttributes.cs
+/Xamarin.Entity/obj
+/Xamarin.Repository/bin/Debug/netstandard2.0
+/Xamarin.Repository/obj/Debug/netstandard2.0
+/Xamarin.Repository/obj

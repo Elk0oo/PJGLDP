@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Template.View.Espace">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#EAEAEA">
+            
+            <Label Text="Name: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="Name"  Text="{Binding Name}"  TextColor="Black" />
+            <Label Text="Description: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="Description" Text="{Binding Description}" TextColor="Black" />
+            <Label Text="Capacity: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="Capacity" Text="{Binding Capacity}" TextColor="Black" />
+            <Label Text="Type: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="Type" Text="{Binding Type}" TextColor="Black" IsEnabled="False"/>
+            <Label Text="Url Image: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="Picture" Text="{Binding Picture}" TextColor="Black" />
+            <!--<Image Source="{Binding Picture}" />-->
+           <!--<Label Text="{Binding SpaceRecap}" HorizontalOptions="StartAndExpand" TextColor="Black" FontSize="Large" />-->
+            
+            
+            <Button Text="Prévisualiser" TextColor="White" BackgroundColor="#800D0F" Clicked="ShowPop_Clicked"/>
+            <Button Text="Retour" TextColor="White" BackgroundColor="#800D0F" Clicked="Cancel_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+ 

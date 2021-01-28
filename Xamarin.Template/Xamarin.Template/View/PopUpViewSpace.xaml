@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Template.View.PopUpViewSpace"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+
+    <StackLayout  BackgroundColor="#EF8D5D" WidthRequest="500" Margin="240" HorizontalOptions="Center" >
+        <StackLayout>
+            <Label Text="Name: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Label x:Name="Name"  Text="{Binding Name}"  TextColor="Black" HorizontalOptions="Center"  FontAttributes="Bold"/>
+            <Label Text="Description: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Label x:Name="Description" Text="{Binding Description}" TextColor="Black" HorizontalOptions="Center"  FontAttributes="Bold"/>
+            <Label Text="Capacity: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Label x:Name="Capacity" Text="{Binding Capacity}" TextColor="Black" HorizontalOptions="Center"  FontAttributes="Bold"/>
+            <Label Text="Type: " HorizontalOptions="Start" TextColor="Black" FontSize="Medium" />
+            <Label x:Name="Type" Text="{Binding Type}" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Image x:Name="Picture" Source="{Binding Picture}" HeightRequest="200" WidthRequest="200" Margin="10"/>
+        
+        </StackLayout>
+        <StackLayout>
+            <Label x:Name="txtInfo" TextColor="#EAEAEA" Text="" HorizontalOptions="Center"  FontAttributes="Italic" />
+            <Button x:Name="BtnValider" Text="Valider" TextColor="White" BackgroundColor="#800D0F" HorizontalOptions="Center" IsEnabled="False" Clicked="BtnValider_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</pages:PopupPage>
